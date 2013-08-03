@@ -60,6 +60,7 @@ body {
 .subline {
 	font-size: 25px;
 	font-family: 'GothamExtraLight';
+	display: none;
 }
 
 .start-text {
@@ -107,7 +108,7 @@ body {
 	margin-top: 500px;
 	margin: 0 auto;
 	text-align: center;
-	background: #ddd;
+	background: #778691;
 }
 
 .arrow-stem {
@@ -136,7 +137,7 @@ body {
 }
 
 .second-frame-container {
-	margin-top: 200px;
+	margin-top: 400px;
 }
 
 .start-inside-title {
@@ -144,4 +145,5 @@ body {
 	font-size: 200px;
 	opacity: 0;
 	color: #fff;
+	text-align: center;
 }
