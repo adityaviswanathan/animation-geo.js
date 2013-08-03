@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+	<link href="style.css" rel="stylesheet" type="test/css">
+
+	<script src="scripts/jquery/jquery.js" type="text/javascript"></script>
+	<script src="scripts/skrollr/skrollr.min.js" type="text/javascript"></script>
+
+</head>
+
+<body>
+
+	<div class="header" data-50="height: 500px; opacity: 1" data-400="height: 0px; opacity: 0">
+		<div class="headline">welcome.</div>
+		<div class="subline">av.</div>	
+
+		<div class="sun-container">
+			<div class="intro-grow-sun" data-0="margin-top: 205px;" data-110="margin-top: -200px;">
+				<div class="inner-shape-3" data-10="width:40px; height:40px; opacity: 1" data-200="width:600px; height:600px;"></div>
+				<div class="inner-shape-2" data-10="width:20px; height:20px; opacity: 1" data-200="width:300px; height:300px;"></div>
+				<div class="inner-shape-1" data-10="width:10px; height:10px; opacity: 1" data-200="width:150px; height:150px;"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="arrow-inverses">
+
+		<div class="arrow-inverse-triangle-left"></div>
+		<div class="arrow-inverse-triangle-right"></div>
+
+	</div>
+
+	<!-- <div class="moon-container">
+
+		<div class="intro-grow">
+			<div class="inner-shape-3" data-10="width:40px; height:40px; opacity: 1" data-110="width:160px; height:160px; opacity: 0"></div>
+			<div class="inner-shape-2" data-10="width:20px; height:20px; opacity: 1" data-110="width:80px; height:80px; opacity: 0"></div>
+			<div class="inner-shape-1" data-10="width:10px; height:10px; opacity: 1" data-110="width:40px; height:40px; opacity: 0"></div>
+		</div>
+
+	</div> -->
+</body>
+
+
+<script>
+
+function positionCircles(circumNum) {
+
+	var innerOffset = -1*($('.inner-shape-'+circumNum).height()+($('.inner-shape-'+circumNum).height()*0.5));
+
+	$('.inner-shape-'+circumNum).css('margin-top', innerOffset +'px');
+
+}
+
+window.onload = function() {
+	positionCircles(1);
+	positionCircles(2);
+}
+
+window.onscroll = function() {
+	positionCircles(1);
+	positionCircles(2);
+}
+
+
+
+
+
+skrollr.init({ smoothScrolling: true });
+
+
+</script>
+
+
+</html>
