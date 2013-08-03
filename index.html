@@ -13,7 +13,7 @@
 
 <body>
 
-	<div class="header" data-50="height: 500px; opacity: 1" data-400="height: 0px; opacity: 0">
+	<div class="header" >
 		<div class="headline">welcome.</div>
 		<div class="subline">av.</div>	
 
@@ -47,6 +47,22 @@
 
 <script>
 
+function setArrow() {
+	var windowHalfWidth = $(window).width()/2-5;
+	console.log(windowHalfWidth)
+
+	$('.arrow-inverse-triangle-left').css('border-width', '300px '+windowHalfWidth+'px 0 0');
+	$('.arrow-inverse-triangle-right').css('border-width', '0 '+windowHalfWidth+'px 300px 0');
+}
+
+setArrow()
+
+function modArrow() {
+	var headerHeightSet = ($('.header').height());
+
+	$('.arrow-inverses').css('margin-top', headerHeightSet +'px');
+}
+
 function positionCircles(circumNum) {
 
 	var innerOffset = -1*($('.inner-shape-'+circumNum).height()+($('.inner-shape-'+circumNum).height()*0.5));
@@ -58,11 +74,13 @@ function positionCircles(circumNum) {
 window.onload = function() {
 	positionCircles(1);
 	positionCircles(2);
+	modArrow()
 }
 
 window.onscroll = function() {
 	positionCircles(1);
 	positionCircles(2);
+	modArrow()
 }
 
 
