@@ -37,6 +37,7 @@
 body {
 	margin:0;
 	font-family: 'GothamMedium';
+	background: #f6eacd;
 
 }
 
@@ -106,6 +107,13 @@ body {
 	margin-top: 500px;
 	margin: 0 auto;
 	text-align: center;
+	background: #ddd;
+}
+
+.arrow-stem {
+	background: black;
+	width: 30px;
+	height: 50px;
 }
 
 .arrow-inverse-triangle-left {
@@ -113,7 +121,7 @@ body {
 	height: 0px;
 	border-style: solid;
 	/*border-width: 100px 500px 0 0;*/
-	border-color: #007bff transparent transparent transparent;
+	border-color: #f6eacd transparent transparent transparent;
 	display: inline-block;
 
 }
@@ -123,6 +131,17 @@ body {
 	height: 0px;
 	border-style: solid;
 /*	border-width: 0 500px 100px 0;*/
-	border-color: transparent #007bff transparent transparent;
+	border-color: transparent #f6eacd transparent transparent;
 	display: inline-block;
+}
+
+.second-frame-container {
+	margin-top: 200px;
+}
+
+.start-inside-title {
+	font-family: 'GothamMedium';
+	font-size: 200px;
+	opacity: 0;
+	color: #fff;
 }
